@@ -1,0 +1,19 @@
+#include "std_msgs/String.h"
+
+第三方引用
+
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  std_msgs
+  demo07_auto_msg
+)
+catkin_package(
+#  INCLUDE_DIRS include
+#  LIBRARIES demo_pkg
+ CATKIN_DEPENDS roscpp rospy std_msgs demo07_auto_msg
+#  DEPENDS system_lib
+)
+
+<build_depend>demo07_auto_msg</build_depend>
+<exec_depend>demo07_auto_msg</exec_depend>

@@ -1,0 +1,40 @@
+geometry_msgs/TransformStamped  传输坐标系相关位置信息
+    std_msgs/Header header                     #头信息
+    uint32 seq                                #|-- 序列号
+    time stamp                                #|-- 时间戳
+    string frame_id                            #|-- 坐标 ID
+    string child_frame_id                    #子坐标系的 id
+    geometry_msgs/Transform transform        #坐标信息
+    geometry_msgs/Vector3 translation        #偏移量
+        float64 x                                #|-- X 方向的偏移量
+        float64 y                                #|-- Y 方向的偏移量
+        float64 z                                #|-- Z 方向上的偏移量
+    geometry_msgs/Quaternion rotation        #四元数
+        float64 x                                
+        float64 y                                
+        float64 z                                
+        float64 w
+geometry_msgs/PointStamped  传输某个坐标系内坐标点的信息
+    std_msgs/Header header                    #头
+    uint32 seq                                #|-- 序号
+    time stamp                                #|-- 时间戳
+    string frame_id                            #|-- 所属坐标系的 id
+    geometry_msgs/Point point                #点坐标
+    float64 x                                    #|-- x y z 坐标
+    float64 y
+    float64 z
+    四维表示空间： 四元数使用四个数来表示旋转，其中一个实部和三个虚部。
+    这使得四元数处于四维空间中，相比于欧拉角的三维空间，提供了额外的自由度。
+
+    旋转的轴和角度： 四元数表示旋转的方式更加直接，它们使用一个实部来
+    表示旋转的角度，并使用三个虚部来表示旋转的轴。这种表示方式不依赖于
+    特定的旋转顺序，避免了欧拉角表示中可能出现的轴向对齐问题。
+
+    无奇异性： 四元数的性质保证了它们不会出现奇异性，即不存在类似欧拉角
+    中的特定旋转组合下的失真问题。每个四元数都有一个唯一的逆，使得可以准
+    确地描述任何旋转，而不会丢失信息。
+
+
+查看坐标关系（sudo apt install ros-noetic-tf2-tools）：
+    rosrun tf2_tools view_frames.py
+    
