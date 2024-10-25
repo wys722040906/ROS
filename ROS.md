@@ -301,6 +301,7 @@ ros2 service list
 ros2 topic list
 rso2 topic info [topic_name]
 ros2 topic type [topic_name] 
+v4l2-ctl -d /dev/video0 --all
 ```
 
 ### ros2 node
@@ -312,5 +313,21 @@ ros2 run <package_name> <executable_name>
 ros2 run turtlesim turtlesim_node --ros-args --remap __node:=my_turtle 重映射节点名称
 ros2 run example_parameters_rclcpp parameters_basic --ros-args -p rcl_log_level:=10 运行节点设置参数
 
+```
+
+## 相机标定
+
+- [**安装网址**](https://www.ncnynl.com/archives/202110/4707.html)
+
+- --size 内角点数
+- --approximate 0.1 单目标定
+
+```
+v4l2-ctl --list-devices | v4l2-ctl -d /dev/video0 --all
+&& ros2 topic hz /image_raw
+
+ros2 run v4l2_camera v4l2_camera_node --ros-args -p video_device:="/dev/video3" -p image_size:=[1280,720]  
+
+ros2 run camera_calibration cameracalibrator --size 7x9  --square 0.025 --approximate 0.1 --ros-args --remap /image:=/image_raw --ros-args --remap camera:=/custom_camera
 ```
 
