@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-5dc46b3cea54ce86b98b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "action_tutorials_cpp__py",
+					"jsonFile" : "directory-action_tutorials_cpp__py-Debug-71951387ecb92645ae98.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "build/action_tutorials_cpp__py",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "action_tutorials_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "action_tutorials_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-action_tutorials_cpp-Debug-6e27785b574a8d94ad57.json",
+					"name" : "action_tutorials_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "action_tutorials_cpp__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-action_tutorials_cpp__cpp-Debug-fec01c448cb62a8bccd7.json",
+					"name" : "action_tutorials_cpp__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "action_tutorials_cpp__py::@5c772453209959da2771",
+					"jsonFile" : "target-action_tutorials_cpp__py-Debug-4b782e99afae7baaa92e.json",
+					"name" : "action_tutorials_cpp__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "action_tutorials_cpp__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-action_tutorials_cpp__rosidl_generator_c-Debug-aab85676cb3a65a21eab.json",
+					"name" : "action_tutorials_cpp__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "action_tutorials_cpp__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-action_tutorials_cpp__rosidl_generator_py-Debug-76a5825456a9308fa615.json",
+					"name" : "action_tutorials_cpp__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "action_tutorials_cpp__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-action_tutorials_cpp__rosidl_typesupport_c-Debug-48a4b89542ace4715318.json",
+					"name" : "action_tutorials_cpp__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "action_tutorials_cpp__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-action_tutorials_cpp__rosidl_typesupport_c__pyext-Debug-cd35e4d508f600adb649.json",
+					"name" : "action_tutorials_cpp__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "action_tutorials_cpp__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-action_tutorials_cpp__rosidl_typesupport_cpp-Debug-ea1de49ce5ea314fece5.json",
+					"name" : "action_tutorials_cpp__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "action_tutorials_cpp__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-action_tutorials_cpp__rosidl_typesupport_fastrtps_c-Debug-34e9b3f72572eea50828.json",
+					"name" : "action_tutorials_cpp__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "action_tutorials_cpp__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-action_tutorials_cpp__rosidl_typesupport_fastrtps_c__pyext-Debug-69ff087552c6d0e2728a.json",
+					"name" : "action_tutorials_cpp__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "action_tutorials_cpp__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-action_tutorials_cpp__rosidl_typesupport_fastrtps_cpp-Debug-7a01a2b6625e6bc37f39.json",
+					"name" : "action_tutorials_cpp__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "action_tutorials_cpp__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-action_tutorials_cpp__rosidl_typesupport_introspection_c-Debug-d1ba74cb1ba600405aed.json",
+					"name" : "action_tutorials_cpp__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "action_tutorials_cpp__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-action_tutorials_cpp__rosidl_typesupport_introspection_c__pyext-Debug-052bcb343dc0d5a53017.json",
+					"name" : "action_tutorials_cpp__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "action_tutorials_cpp__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-action_tutorials_cpp__rosidl_typesupport_introspection_cpp-Debug-7c23ecb14ed3780d067c.json",
+					"name" : "action_tutorials_cpp__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "action_tutorials_cpp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-action_tutorials_cpp_uninstall-Debug-77cfe5501a2bb914e396.json",
+					"name" : "action_tutorials_cpp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_action_tutorials_cpp_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_action_tutorials_cpp_egg-Debug-c04b7907779024084d48.json",
+					"name" : "ament_cmake_python_build_action_tutorials_cpp_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_action_tutorials_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_action_tutorials_cpp-Debug-e9ecf1a11de3c70a0146.json",
+					"name" : "ament_cmake_python_copy_action_tutorials_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-c42cfbdf9bcdb869740e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/wys/Documents/ROS2/demos/action_tutorials/pkg/build",
+		"source" : "/home/wys/Documents/ROS2/demos/action_tutorials/pkg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

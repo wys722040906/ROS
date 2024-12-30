@@ -1,0 +1,6 @@
+{
+  "package_name": "action_tutorials_cpp",
+  "non_idl_tuples": [
+    "/home/wys/Documents/ROS2/demos/action_tutorials/pkg:action/Test.action"
+  ]
+}

@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from action_tutorials_cpp/action/Test.action
+// generated code does not contain a copyright notice
+
+
+module action_tutorials_cpp {
+  module action {
+    @verbatim (language="comment", text=
+      " test.action" "\n"
+      "文件名本身应该是大写开头，如 TestAction.action。如果文件名本身不符合规范，ROS2 可能会报错。" "\n"
+      " Goal (请求)")
+    struct Test_Goal {
+      int32 order;
+    };
+    @verbatim (language="comment", text=
+      "Feedback (反馈)")
+    struct Test_Result {
+      sequence<int32> sequence;
+    };
+    @verbatim (language="comment", text=
+      "Result (结果)")
+    struct Test_Feedback {
+      sequence<int32> sequence;
+    };
+  };
+};

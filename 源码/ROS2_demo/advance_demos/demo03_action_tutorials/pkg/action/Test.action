@@ -1,0 +1,12 @@
+# test.action
+#文件名本身应该是大写开头，如 TestAction.action。如果文件名本身不符合规范，ROS2 可能会报错。
+# Goal (请求)
+int32 order
+
+---
+# Feedback (反馈)
+int32[] sequence
+
+---
+# Result (结果)
+int32[] sequence

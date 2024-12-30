@@ -1,0 +1,5 @@
+composition::Talker;/home/wys/Documents/ROS2/demos/composition/build/libtalker_component.so
+composition::Listener;/home/wys/Documents/ROS2/demos/composition/build/liblistener_component.so
+composition::NodeLikeListener;/home/wys/Documents/ROS2/demos/composition/build/libnode_like_listener_component.so
+composition::Server;/home/wys/Documents/ROS2/demos/composition/build/libserver_component.so
+composition::Client;/home/wys/Documents/ROS2/demos/composition/build/libclient_component.so

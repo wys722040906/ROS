@@ -1,0 +1,92 @@
+#同一工作空间的不同包中使用接口包{
+    工作空间内依赖：只要所有包都在同一个工作空间中，并且你在
+    package.xml 和 CMakeLists.txt 中正确配置了依赖，
+    其他包就可以直接访问接口。
+}
+/*
+配置 action_tutorials_cpp 包依赖 action_tutorials_interfaces
+CMakeLists.txt：
+    find_package(action_tutorials_interfaces REQUIRED)
+    ament_target_dependencies(your_target
+        rclcpp
+        action_tutorials_interfaces  # 添加接口包依赖
+    )
+package.xml：
+    <depend>action_tutorials_interfaces</depend>
+调用:
+    #include "action_tutorials_interfaces/action/test.hpp"
+*/
+
+#不同工作空间的不同包中使用接口包{
+    确保 action_tutorials_interfaces 包已经安装
+    确保 action_tutorials_interfaces 包已经被构建并安装到工作空间的 install 目录
+    colcon build --symlink-install
+    其他工作空间中包依赖设置：同上
+}
+/*
+终端设置环境变量(.bashrc)：
+export ROS_PACKAGE_PATH=/path/to/your/other/workspace/install:$ROS_PACKAGE_PATH
+colcon build
+
+rosdep安装公共软件包：
+rosdep install --from-paths src --ignore-src -r -y
+
+脚本启动：
+set_ros_package_path.sh：
+    模板文件：
+CMakeLists：
+    #使用 configure_file
+    configure_file(
+    ${CMAKE_CURRENT_SOURCE_DIR}/set_ros_package_path.sh.in
+    ${CMAKE_CURRENT_BINARY_DIR}/set_ros_package_path.sh
+    )
+    #设置脚本的执行权限
+    file(COPY ${CMAKE_CURRENT_BINARY_DIR}/set_ros_package_path.sh 
+    DESTINATION 
+    ${CMAKE_CURRENT_BINARY_DIR}
+    )
+    execute_process(COMMAND chmod +x ${CMAKE_CURRENT_BINARY_DIR}/set_ros_package_path.sh)
+    # 执行生成的脚本
+    运行 colcon build 或 CMake 构建之后：
+bash:    
+    # 运行生成的脚本
+    source ${CMAKE_CURRENT_BINARY_DIR}/set_ros_package_path.sh
+
+[
+    your_workspace/
+    ├── CMakeLists.txt
+    ├── package.xml
+    └── src/
+        └── my_package/
+            └── src/
+                └── my_node.cpp
+]
+[CMakeLists:
+    cmake_minimum_required(VERSION 3.5)
+    project(my_ros_package)
+    # 设置 C++ 版本和编译选项
+    set(CMAKE_CXX_STANDARD 17)
+    # 查找 ROS 2 依赖包
+    find_package(rclcpp REQUIRED)
+    find_package(std_msgs REQUIRED)
+    # 配置文件模板，生成启动脚本
+    configure_file(
+    ${CMAKE_CURRENT_SOURCE_DIR}/set_ros_package_path.sh.in
+    ${CMAKE_CURRENT_BINARY_DIR}/set_ros_package_path.sh
+    )
+    # 设置生成脚本的执行权限
+    execute_process(COMMAND chmod +x ${CMAKE_CURRENT_BINARY_DIR}/set_ros_package_path.sh)
+    ament_package()
+]
+[set_ros_package_path.sh.in]
+[
+# 构建工作空间
+colcon build
+# 源化并运行脚本，设置环境并启动节点
+source install/setup.bash
+source ${CMAKE_CURRENT_BINARY_DIR}/set_ros_package_path.sh
+]
+
+*/
+
+

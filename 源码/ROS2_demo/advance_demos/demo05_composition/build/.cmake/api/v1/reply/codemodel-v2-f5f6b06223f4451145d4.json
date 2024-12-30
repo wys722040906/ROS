@@ -1,0 +1,142 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-ab9280b33bcbc0ce7d8f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "composition",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "client_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client_component-Debug-c1284a95e723aaebefdd.json",
+					"name" : "client_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "composition_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-composition_uninstall-Debug-5d82582a9c14c5815ac9.json",
+					"name" : "composition_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dlopen_composition::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dlopen_composition-Debug-03a28382db9b07042e43.json",
+					"name" : "dlopen_composition",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linktime_composition::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linktime_composition-Debug-3055c3333b5c49b5945d.json",
+					"name" : "linktime_composition",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "listener_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-listener_component-Debug-30a43704ad41a45a6876.json",
+					"name" : "listener_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manual_composition::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manual_composition-Debug-b87c27f8eaf7d81ca271.json",
+					"name" : "manual_composition",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "node_like_listener_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-node_like_listener_component-Debug-338c129633c05ba28fdd.json",
+					"name" : "node_like_listener_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_component-Debug-ab6f899043a91164217d.json",
+					"name" : "server_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talker_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talker_component-Debug-754ebf4d446d2ed15d78.json",
+					"name" : "talker_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-98217a2bd2fc432b7d0b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/wys/Documents/ROS2/demos/composition/build",
+		"source" : "/home/wys/Documents/ROS2/demos/composition"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
