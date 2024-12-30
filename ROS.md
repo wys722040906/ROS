@@ -331,3 +331,11 @@ ros2 run v4l2_camera v4l2_camera_node --ros-args -p video_device:="/dev/video3" 
 ros2 run camera_calibration cameracalibrator --size 7x9  --square 0.025 --approximate 0.1 --ros-args --remap /image:=/image_raw --ros-args --remap camera:=/custom_camera
 ```
 
+
+
+```
+sudo apt install ros-<ros2-distro>-camera-calibration-parsers
+sudo apt install ros-<ros2-distro>-camera-info-manager
+sudo apt install ros-<ros2-distro>-launch-testing-ament-cmake
+```
+
