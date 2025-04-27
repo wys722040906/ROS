@@ -1,0 +1,40 @@
+# MoveRobot.srv
+# 控制机器人移动的服务
+
+# 请求部分 (Request)
+# -----------------------------------
+# 机器人ID
+int32 robot_id
+
+# 目标位置
+float64 target_x
+float64 target_y
+float64 target_z
+
+# 目标方向（四元数）
+float64 target_orientation_x
+float64 target_orientation_y
+float64 target_orientation_z
+float64 target_orientation_w
+
+# 移动速度 (0.0-1.0)
+float32 speed_factor
+
+# 是否避障
+bool avoid_obstacles
+---
+# 响应部分 (Response)
+# -----------------------------------
+# 操作是否成功
+bool success
+
+# 实际抵达的位置
+float64 actual_x
+float64 actual_y
+float64 actual_z
+
+# 结果消息
+string message
+
+# 移动消耗的时间（秒）
+float64 elapsed_time 

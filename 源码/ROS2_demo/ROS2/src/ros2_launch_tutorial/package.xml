@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ros2_launch_tutorial</name>
+  <version>0.0.0</version>
+  <description>ROS2教程中的启动文件包，演示如何同时启动多个节点</description>
+  <maintainer email="1102620562@qq.com">wys</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  <depend>rclcpp</depend>
+  <depend>ros2_client_tutorial</depend>
+  <depend>ros2_vision_tutorial</depend>
+  <depend>ros2_interfaces_tutorial</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
